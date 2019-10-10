@@ -1,0 +1,285 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    color: #626262;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 152px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    color: #626262;
+    margin: 0 70px;
+}
+
+.logo {
+    color: #000000;
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    letter-spacing: 6px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+}
+
+a {
+    text-decoration: none;
+    color: #626262;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.welcome-img {
+    text-align: center;
+}
+
+.welcome-img img {
+    height: auto;
+    width: 90%;  
+}
+
+.lifestyle-block img, .photodiary-block img, .lifestyle-block2 img {
+    height: auto;
+    width: 100%;
+}
+
+.photodiary-article, .lifestyle-block, .photodiary-block, .lifestyle-block2 {
+    margin: 90px 140px;
+}
+
+h6 {
+    color: #b4ad9e;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.photodiary-article h2 {
+    margin: 28px 0;
+}
+
+.photodiary-article p {
+    margin-bottom: 50px;
+}
+
+h6 a {
+    text-decoration: none;
+    color: #626262;
+}
+
+.lifestyle-block, .photodiary-block, .lifestyle-block2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.lifestyle-block-1, .photodiary-block-1, .lifestyle-block2-1 {
+    margin-right: 60px;
+}
+
+.lifestyle-block h6, .photodiary-block h6, .lifestyle-block2 h6 {
+    margin: 30px 0;
+}
+
+.lifestyle-block p, .photodiary-block p, .lifestyle-block2 p {
+    margin: 36px 0;
+}
+
+.sign-up {
+    height: 288px;
+    background-color: #f0f0f0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up h2 {
+    color: #333333;
+}
+
+.input-field {
+    width: 400px;
+    height: 30px; 
+}
+
+.sign-up-black-line {
+    width: 400px;
+    height: 1px;
+    background-color: #000;
+}
+.input-field input {
+    height: 100%;
+    width: 90%;
+    border: none;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+.input-field button {
+    height: 100%;
+    width: 9%;
+    border: none;
+    background-color: #f0f0f0;
+}
+
+.button {
+    text-align: center;
+    margin: 130px 0;
+}
+
+.button button {
+    width: 164px;
+    height: 60px;
+    border: 1px solid #626262;
+    background-color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #626262;
+}
+
+footer {
+    min-height: 100px;
+    background-color: #f0f0f0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.legal-part {
+    width: 30%;
+    margin: 0 150px;
+}
+
+.legal-part a {
+    text-decoration: none;
+    color: #202020;
+    margin: 4%;
+}
+
+.socials {
+    float: right;
+}
+
+.socials li {
+    color: #202020;
+    list-style: none;
+    margin: 10px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+
+@media screen and (max-width: 768px){
+    .nav-links {
+        position: absolute;
+        right: 10%;
+        height: 8vh;
+        top: 52px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+  }
+    nav {
+        clear: both;
+        display: flex;
+        flex-direction: column;
+  }
+    .photodiary-article, .lifestyle-block, .photodiary-block, .lifestyle-block2 {
+        margin: 40px 70px;
+    }
+    .logo {
+        margin-top: 3vh;
+        font-size: 26px;
+        letter-spacing: 3px;
+    }
+
+    h2 {
+        font-size: 18px;        
+    }
+    .photodiary-article h2 { 
+        margin: 20px 0;
+        font-size: 26px; 
+    }
+    .photodiary-article p {
+        margin-bottom: 30px;
+    }
+    .lifestyle-block h6, .photodiary-block h6, .lifestyle-block2 h6 {
+        margin: 16px 0;
+    }
+    .lifestyle-block p, .photodiary-block p, .lifestyle-block2 p {
+        margin: 24px 0;
+    }
+    .sign-up {
+        height: 150px;
+    }
+    .button button {
+        width: 124px;
+        height: 40px;
+        border: 1px solid #626262;
+        background-color: #fff;
+        font-family: 'Playfair Display', serif;
+        font-size: 16px;
+        color: #626262;
+    }
+    .button {
+        margin: 90px 0;
+    }
+    .legal-part, .socials {
+        font-size: 10px;
+        margin: 0 40px;
+    }
+    .lifestyle-block, .photodiary-block, .lifestyle-block2 {
+        display: block;
+    }
+
+    .lifestyle-block-1, .photodiary-block-1, .lifestyle-block2-1 {
+        margin-right: 0;
+    }
+    .socials li {
+        margin: 4px;
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
